@@ -22,7 +22,7 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
           port: ${{ secrets.PORT }}
-          script: 
+          script: |
             cd ActionTestRepo
             git reset --hard
             git fetch
