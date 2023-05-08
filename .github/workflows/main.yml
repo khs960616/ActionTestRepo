@@ -27,3 +27,8 @@ jobs:
             git reset --hard
             git fetch
             git pull
+            ./gradlew build
+            cd ~/ActionTestRepo/build/libs
+            fuser -k -n tcp 9999
+            sudo chmod 755 action-0.0.1-SNAPSHOT.jar
+            nohub java -jar action-0.0.1-SNAPSHOT.jar &
