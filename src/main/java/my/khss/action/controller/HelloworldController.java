@@ -10,4 +10,9 @@ public class HelloworldController {
     public String helloGitAction() {
         return "Hello";
     }
+
+    @GetMapping("/test01")
+    public String test01() {
+        return "test01";
+    }
 }
